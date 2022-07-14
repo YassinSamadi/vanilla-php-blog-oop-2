@@ -1,0 +1,23 @@
+name: oopblog
+recipe: laravel
+config:
+  php: '8.0'
+  webroot: .
+
+proxy:
+  appserver:
+    - test.lndo.site
+  pma:
+    - pma.peopleservice.lndo.site
+
+services:
+  webserver:
+    type: apache:2.4
+    ssl: true
+  database:
+    type: mysql:5.7
+    portforward: 33069
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
