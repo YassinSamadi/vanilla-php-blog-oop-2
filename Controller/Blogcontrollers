@@ -1,0 +1,15 @@
+<?php
+    include('./classes/DB.php');
+?>
+
+<?php
+
+class BlogController
+{
+
+    public function register()
+    {
+        
+    }
+}
+?>
