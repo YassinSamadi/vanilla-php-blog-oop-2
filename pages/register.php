@@ -7,11 +7,11 @@
     <title>Register</title>
     <h1>Sign up</h1>
     
-    <form method="POST">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="email">
-    <input type="password" placeholder="Password">
-    <button type="submit" class="btn">Register</button>
+    <form class="form" action="" method="POST">
+    <input name="name" type="text" placeholder="Name">
+    <input name="email" type="text" placeholder="email">
+    <input name="password" type="password" placeholder="Password">
+    <button name="register" type="submit" class="btn">Register</button>
     </form>
 
 </head>
