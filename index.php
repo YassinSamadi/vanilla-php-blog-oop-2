@@ -25,16 +25,18 @@
 
 <h1>Sign up</h1>
     
-    <form class="form" action="" method="POST">
+    <form class="form" action="../includes/signup.php" method="POST">
         <input name="name" type="text" placeholder="Name">
         <input name="email" type="text" placeholder="email">
         <input name="password" type="password" placeholder="Password">
         <button name="register" type="submit" class="btn">Register</button>
     </form>
+
+
     <h1>LOGIN</h1>
     <form class="form" action="" method="POST">
-        <input name="email" type="text" placeholder="email">
-        <input name="password" type="password" placeholder="Password">
+        <input name="emaillogin" type="text" placeholder="email">
+        <input name="passwordlogin" type="password" placeholder="Password">
         <button name="login" type="submit" class="btn">Log in</button>
     </form>
 </body>

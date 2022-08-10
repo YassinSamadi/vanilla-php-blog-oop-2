@@ -8,12 +8,12 @@ class signupContr extends signup{
 
         public function __construct($name,$email,$password)
         {
-            $this->$name = $name;
-            $this->$email = $email;
-            $this->$password = $password;
+            $this->name = $name;
+            $this->email = $email;
+            $this->password = $password;
         }
 
-        private function signupUser()
+        public function signupUser()
         {
             if($this->emptyInput() == false)
             {
@@ -41,7 +41,7 @@ class signupContr extends signup{
 
         private function emptyInput()
         {
-            $result = false;
+            $result=false;
             
             if(empty($this->name) || empty($this->email) || empty($this->password))
             {
@@ -54,7 +54,7 @@ class signupContr extends signup{
         }
         private function invalidName()
         {
-            $result = false;
+            $result=false;
             if(!preg_match("/^[a-zA-Z]+$/", $this->name))
             {
                $result = false; 
@@ -69,7 +69,7 @@ class signupContr extends signup{
 
         private function invalidEmail()
         {
-            $result = false;
+            $result=false;
             if(!filter_var($this->email, FILTER_VALIDATE_EMAIL))
             {
                $result = false; 
@@ -84,7 +84,7 @@ class signupContr extends signup{
 
         private function checkDuplicate()
         {
-            $result = false;
+            $result=false;
             if(!$this->checkUser($this->email))
             {
                $result = false; 

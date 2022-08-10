@@ -9,15 +9,17 @@
 
         // instantiate signup
         include("../classes/DB.php");
-        include("../Controller/signupController.php");
         include("../classes/signupClass.php");
+        include("../Controller/signupController.php");
+        
 
         $signup = new signupContr($name,$email,$password);
         //running error
-
+        $signup->signupUser();
         
         //go back to home
 
+        header('location: ../index.php?error=none');
 
     }
 
