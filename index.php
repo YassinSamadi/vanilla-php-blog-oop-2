@@ -1,3 +1,8 @@
+<?php
+    //session_start();
+    include('./Controller/Blogcontrollers.php');
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +15,12 @@
     <a href="./pages/login.php">Login</a> 
 </head>
 <body>
-    
+    <?php
+        $testObj = new Posts();
+        $testObj->getPosts();
+
+        $test = new Posts();
+        $test->setUsers("test","test@email.test","null");
+    ?>
 </body>
 </html>
