@@ -17,7 +17,9 @@
         {
     ?>
             <!-- <a href="#"><?php //echo $_SESSION["name"];?></a> -->
+            <a href="./pages/addpost.php">Add post</a> 
             <a href="./includes/logout.php">logout</a> 
+            
     <?php
         }
         else
