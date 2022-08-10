@@ -1,5 +1,5 @@
 <?php
-    include ('./Controller/Blogcontrollers.php');
+    include('../Controller/Blogcontrollers.php');
     //define("PATH_ROOT", dirname(__FILE__));
     //include_once PATH_ROOT . "/Blogcontrollers.php";
 ?>

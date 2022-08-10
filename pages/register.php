@@ -8,6 +8,7 @@
     
 </head>
 <body>
+<button onclick="window.history.back();">Back</button>
 <h1>Sign up</h1>
     
     <form action="../includes/signup.php" method="POST">

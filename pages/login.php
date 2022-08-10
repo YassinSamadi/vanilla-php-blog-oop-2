@@ -8,8 +8,9 @@
     
 </head>
 <body>
+<button onclick="window.history.back();">Back</button>
 <h1>LOGIN</h1>
-    <form class="form" action="" method="POST">
+    <form  action="../includes/login.php" method="POST">
         <input name="emaillogin" type="text" placeholder="email">
         <input name="passwordlogin" type="password" placeholder="Password">
         <button name="login" type="submit" class="btn">Log in</button>

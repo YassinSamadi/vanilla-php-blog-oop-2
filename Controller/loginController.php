@@ -1,6 +1,6 @@
 <?php
 
-class signupContr extends Login{
+class loginContr extends Login{
 
         private $email;
         private $password;
@@ -11,20 +11,21 @@ class signupContr extends Login{
             $this->password = $password;
         }
 
-        public function signupUser()
+        public function loginUser()
         {
             if($this->emptyInput() == false)
             {
                 header("location: ../index.php?error=emptyinput");
                 exit();
             }
+            $this->getUser($this->email, $this->password);
         }
 
         private function emptyInput()
         {
             $result=false;
             
-            if(empty($this->name) || empty($this->email) || empty($this->password))
+            if(empty($this->email) || empty($this->password))
             {
                 $result = false;
             }
