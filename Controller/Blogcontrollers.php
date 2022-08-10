@@ -29,7 +29,7 @@
     }*/
     class Posts extends Dbh
     {
-        public function getPosts()
+      /*  public function getPosts()
         {
             $sql = "SELECT * from Posts";
             $stmt = $this->connect()->query($sql);
@@ -53,15 +53,7 @@
             }
 
         }
-
-        public function setUsers($name,$email,$password)
-        {
-            $sql = "INSERT INTO Users(name,email,password) VALUES (?,?,?)";
-            $stmt = $this->connect()->prepare($sql);
-            $stmt->execute([$name, $email,$password]);
-
-
-        }
+        */
     }
 
 ?>

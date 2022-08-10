@@ -9,10 +9,22 @@ class Dbh{
     protected function connect()
     {
         //try catch
-        $conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username,$this->password);
-        $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+       try
+       {
+            $dbh = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username,$this->password);
+            return $dbh;
+       }
+       catch (PDOException $e)
+       {
+            print "Error!: " . $e->getMessage() . "<br/>";
+            die();
+       }
+       
+       
+       // $conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username,$this->password);
+       // $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-        return $conn;
+       // return $conn;
     } 
 }
 

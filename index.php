@@ -16,11 +16,26 @@
 </head>
 <body>
     <?php
-        $testObj = new Posts();
-        $testObj->getPosts();
+        //$testObj = new Posts();
+       // $testObj->getPosts();
 
-        $test = new Posts();
-        $test->setUsers("test","test@email.test","null");
+       // $test = new Posts();
+        //$test->setUsers("test","test@email.test","null");
     ?>
+
+<h1>Sign up</h1>
+    
+    <form class="form" action="" method="POST">
+        <input name="name" type="text" placeholder="Name">
+        <input name="email" type="text" placeholder="email">
+        <input name="password" type="password" placeholder="Password">
+        <button name="register" type="submit" class="btn">Register</button>
+    </form>
+    <h1>LOGIN</h1>
+    <form class="form" action="" method="POST">
+        <input name="email" type="text" placeholder="email">
+        <input name="password" type="password" placeholder="Password">
+        <button name="login" type="submit" class="btn">Log in</button>
+    </form>
 </body>
 </html>
