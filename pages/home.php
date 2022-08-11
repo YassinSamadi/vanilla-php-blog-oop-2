@@ -17,5 +17,6 @@
         $testObj = new Posts();
         $testObj->getPosts();
     ?>
+    
 </body>
 </html>

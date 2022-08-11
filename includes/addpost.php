@@ -5,14 +5,14 @@
         //get data
         $title = $_POST["title"];
         $content = $_POST["content"];
+        //$user_id =  $_REQUEST["id"];
         $user_id =  2;
-
         
         include("../classes/DB.php");
         include("../classes/addPostClass.php");
         include("../Controller/addPostController.php");
         
-
+        
         $addpost = new addpostContr($title,$content,$user_id );
         
         $addpost->addPost();

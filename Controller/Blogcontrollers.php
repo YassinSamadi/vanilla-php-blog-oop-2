@@ -9,10 +9,13 @@
         {
             $sql = "SELECT * from Posts";
             $stmt = $this->connect()->query($sql);
+            
             while($row = $stmt->fetch())
             {
-                 echo '<br>'. $row['title'] . ' ' .$row['content'] . '<br>';
-
+                ?>
+                   <h3><?php echo $row['title']?> </h3> 
+                   <p><?php echo $row['content']?> <br></p> 
+                <?php
             }
         }
         
@@ -32,4 +35,4 @@
        */
     }
     
-?>
+
