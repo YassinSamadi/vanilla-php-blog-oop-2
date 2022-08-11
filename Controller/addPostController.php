@@ -4,12 +4,12 @@ class addpostContr extends addpost{
 
         private $title;
         private $content;
-
-        public function __construct($title,$content)
+        private $userid;
+        public function __construct($title,$content,$userid)
         {
             $this->title = $title;
             $this->content = $content;
-            
+            $this->userid = $userid;
         }
 
         public function addPost()
@@ -25,7 +25,7 @@ class addpostContr extends addpost{
                 exit();
             }
            
-            $this->setPost($this->title,$this->content);
+            $this->setPost($this->title,$this->content,$this->userid);
         }
 
         private function emptyInput()
