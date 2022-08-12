@@ -35,7 +35,7 @@ class Login extends Dbh{
         if($checkPassword == true)
         {
             $stmt = $this->connect()->prepare('SELECT * FROM Users WHERE email =?');
-           
+          
             if(!$stmt->execute(array($email)))
             {
                 $stmt = null;
@@ -54,6 +54,8 @@ class Login extends Dbh{
 
             session_start();
             $_SESSION["email"] =$user[0]["email"];
+
+            $_SESSION["id"] =$user[0]["id"];
             $stmt = null;
         }
 

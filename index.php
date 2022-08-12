@@ -15,6 +15,9 @@
     <?php 
         if(isset($_SESSION["email"]))
         {
+            echo $_SESSION["id"];
+            echo $_SESSION["email"];
+            //echo session_id();
     ?>
             <!-- <a href="#"><?php //echo $_SESSION["name"];?></a> -->
             <a href="./pages/addpost.php">Add post</a> 
