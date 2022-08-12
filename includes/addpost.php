@@ -3,10 +3,10 @@
 
     if(isset($_POST["post"]))
     {
-        //get data
+        
         $title = $_POST["title"];
         $content = $_POST["content"];
-        //$user_id =  $_REQUEST["id"];
+        
         
         
         include("../classes/DB.php");

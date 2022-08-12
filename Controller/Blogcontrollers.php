@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     include("../classes/DB.php");
     
     
@@ -15,7 +17,15 @@
                 ?>
                    <h3><?php echo $row['title']?> </h3> 
                    <p><?php echo $row['content']?> <br></p> 
+                   
                 <?php
+                if($_SESSION["id"] == $row["user_id"])
+                {
+                    ?>
+                    <a href="">Edit post</a> 
+                    <a href="">Delete post</a> 
+                    <?php
+                }
             }
         }
         
