@@ -23,7 +23,7 @@
                 {
                     ?>
                     <a href="edit.php?id=<?php echo $row['id'];?>" >Edit post</a> 
-                    <a href="delete.php?id=<?php echo $row["id"];?>">Delete post</a> 
+                    <a href="../includes/deletepost.php?id=<?php echo $row["id"];?>">Delete post</a> 
                     <?php
                 }
             }
