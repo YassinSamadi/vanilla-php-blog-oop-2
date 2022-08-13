@@ -12,12 +12,10 @@
 <body>
 <button onclick="window.history.back();">Back</button>
     <h1>Edit Post</h1>
-    
     <form  action="../includes/editpost.php?id=<?php echo $_GET['id'];?>" method="POST">
         <input name="edittitle" type="text" placeholder="Title">
         <input name="editcontent" type="text" placeholder="Content">
         <button name="edit" type="submit" class="btn">Edit</button>
     </form>
-    
 </body>
 </html>

@@ -10,7 +10,6 @@
 <body>
 <button onclick="window.history.back();">Back</button>
 <h1>Sign up</h1>
-    
     <form action="../includes/signup.php" method="POST">
         <input name="name" type="text" placeholder="Name">
         <input name="email" type="text" placeholder="email">

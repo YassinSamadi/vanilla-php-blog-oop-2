@@ -16,6 +16,5 @@
         $allPosts = new Posts();
         $allPosts->getPosts();
     ?>
-    
 </body>
 </html>

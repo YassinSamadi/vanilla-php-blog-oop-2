@@ -8,7 +8,7 @@ class Dbh{
 
     protected function connect()
     {
-        //try catch
+     
        try
        {
             $dbh = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username,$this->password);
@@ -20,11 +20,6 @@ class Dbh{
             die();
        }
        
-       
-       // $conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username,$this->password);
-       // $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-       // return $conn;
     } 
 }
 

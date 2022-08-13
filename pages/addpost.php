@@ -10,12 +10,10 @@
 <body>
 <button onclick="window.history.back();">Back</button>
     <h1>Add Post</h1>
-    
     <form  action="../includes/addpost.php" method="POST">
         <input name="title" type="text" placeholder="Title">
         <input name="content" type="text" placeholder="Content">
         <button name="post" type="submit" class="btn">Post</button>
     </form>
-    
 </body>
 </html>

@@ -10,7 +10,6 @@ class deletepostContr extends deletePost{
         }
         public function deletepost()
         {
-           
             $this->removePost($this->id);
         }
     }

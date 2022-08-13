@@ -9,12 +9,11 @@
     {
         $title = $_POST["edittitle"];
         $content = $_POST["editcontent"];
-        
         $postid = $_GET['id'];
 
         $editpost = new editpostContr($title,$content, $postid);
-        
         $editpost->editpost();
+        
         header('location: ../index.php?error=none');
     }
     else{

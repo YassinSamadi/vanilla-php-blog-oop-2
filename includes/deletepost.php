@@ -11,8 +11,8 @@
         $postid = $_GET['id'];
 
         $editpost = new deletepostContr($postid);
-        
         $editpost->deletepost($postid);
+
         header('location: ../index.php?error=none');
     }
     else{
