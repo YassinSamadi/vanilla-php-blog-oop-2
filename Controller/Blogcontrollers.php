@@ -22,8 +22,8 @@
                 if($_SESSION["id"] == $row["user_id"])
                 {
                     ?>
-                    <a href="">Edit post</a> 
-                    <a href="">Delete post</a> 
+                    <a href="edit.php?id=<?php echo $row['id'];?>" >Edit post</a> 
+                    <a href="delete.php?id=<?php echo $row["id"];?>">Delete post</a> 
                     <?php
                 }
             }

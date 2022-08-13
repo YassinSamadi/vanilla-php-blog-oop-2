@@ -14,8 +14,8 @@
 </head>
 <body>
     <?php
-        $testObj = new Posts();
-        $testObj->getPosts();
+        $allPosts = new Posts();
+        $allPosts->getPosts();
     ?>
     
 </body>

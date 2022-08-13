@@ -1,15 +1,14 @@
 <?php
 
-class addpost extends Dbh{
+class editPost extends Dbh{
 
 
-    protected function setPost($title,$content,$id)    
+    protected function updatePost($title,$content,$id)    
     {
-        $stmt = $this->connect()->prepare('INSERT INTO Posts(title,content,id) VALUES (?,?,?);');
+        
+        $stmt = $this->connect()->prepare("UPDATE Posts SET title = ?, content =?  WHERE id=?");
 
         
-
-
         if(!$stmt->execute(array($title,$content,$id)))
         {
             $stmt = null;
