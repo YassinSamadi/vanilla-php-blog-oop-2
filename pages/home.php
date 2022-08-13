@@ -1,7 +1,5 @@
 <?php
     include('../Controller/Blogcontrollers.php');
-    //define("PATH_ROOT", dirname(__FILE__));
-    //include_once PATH_ROOT . "/Blogcontrollers.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+<button onclick="window.history.back();">Back</button>
     <?php
         $allPosts = new Posts();
         $allPosts->getPosts();

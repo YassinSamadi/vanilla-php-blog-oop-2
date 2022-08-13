@@ -5,7 +5,7 @@ class addpost extends Dbh{
 
     protected function setPost($title,$content,$id)    
     {
-        $stmt = $this->connect()->prepare('INSERT INTO Posts(title,content,id) VALUES (?,?,?);');
+        $stmt = $this->connect()->prepare('INSERT INTO Posts(title,content,user_id) VALUES (?,?,?);');
 
         
 

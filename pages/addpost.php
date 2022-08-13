@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<button onclick="window.history.back();">Back</button>
     <h1>Add Post</h1>
     
     <form  action="../includes/addpost.php" method="POST">

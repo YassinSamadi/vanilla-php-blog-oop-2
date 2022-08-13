@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+<button onclick="window.history.back();">Back</button>
     <h1>Edit Post</h1>
     
     <form  action="../includes/editpost.php?id=<?php echo $_GET['id'];?>" method="POST">
